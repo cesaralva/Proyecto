@@ -1,0 +1,112 @@
+@import url(main.css);
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #343434;
+  font-weight: 400;
+}
+
+.name{
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(36, 4, 4);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    float: right;
+    display: block;
+    color: none;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.perfil{
+    width: 96px;
+    height: 96px;
+    display: left;
+    margin: 50px 100px !important;
+}
+
+.redes{
+    display: block;
+    align-items: center;
+    height: 50vh;/* viepord*/
+    width: 120vh;
+
+}
+
+
+
+section {
+    height: 100vh;/* viepord*/
+    width: 210vh;
+
+}
+.perfil{
+    float: left;
+    width: 210px;
+    height: 210px;
+}
+.about{
+background-color: rgb(116, 148, 148);
+text-align: center;
+color: aliceblue;
+
+}
+
+.services{
+background-color: rgb(231, 171, 171);
+text-align: center;
+color: aliceblue;
+}
+
+.works{
+background-color: rgb(138, 192, 236) ;
+text-align: center;
+color: aliceblue;
+
+
+}
+.blog{
+    background-color: rgb(3, 207, 71);
+    text-align: center;
+    color: aliceblue;
+}
+.contact{
+background-color: rgb(232, 149, 240);
+text-align: center;
+color: aliceblue;
+}
+ 
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 33px; 
+}
+p { float: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 33px;
+    
+}
+
+span{
+        display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
