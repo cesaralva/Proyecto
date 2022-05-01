@@ -1,6 +1,6 @@
 <?php
-    $name = "Cesar";
-    $lastname = "Alva";
+    define ("name" , "Cesar");
+    define("lastname", "Alva");
     $role = "Programador";
     $email = "csarx09@gmail.com";
     $phone = 912659101;
@@ -13,11 +13,6 @@
         "works",
         "Blog",
         "Contacts"
-
-       
-     
-
-
 
     );
     $course = array(
