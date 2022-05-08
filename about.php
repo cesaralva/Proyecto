@@ -1,5 +1,5 @@
 <section class="container about" id="sobre%20mi">
-    <div >
+    <div>
         <div class="row">
             <div class="col">
                 <img class="perfil" src="img/profile.jpg" alt="foto de perfil">
@@ -29,3 +29,54 @@
         </div>
     </div>
 </section>
+
+<?php
+
+/*
+ Inserting data into the database. 
+if ($conexion -> connect_errno) {
+    die("Error de conexion");
+}else {
+    $sql = "INSERT INTO profile(name, lastname, role, email, phone,  address, city, birthday) 
+    VALUES('Cesar','Alva','estudiante','csarx09@gmail.com','912659101','Jr. Ayacucho 3891','Lima','1985-09-16')";
+
+ Checking if the row was added. 
+    $resultado = $conexion->query($sql);
+   if ($conexion -> affected_rows <=1) {                                                                                                                                                                                                                                                                
+       echo "fila agregada:" . $conexion->affected_rows;
+}
+}
+?>
+*/
+
+/* Metodo Preparared statements */
+
+if ($conexion->connect_errno) {
+} else {
+    $stetament = $conexion->prepare("INSERT INTO profile(name, lastname, role, email, phone,  address, city, birthday) 
+    VALUES(?,?,?,?,?,?,?,?)");
+
+    $stetament->bind_param(
+        'ssssissd',
+        $name,
+        $lastname,
+        $role,
+        $email,
+        $phone,
+        $address,
+        $city,
+        $birthday
+    );
+
+    $name = "Cesar";
+    $lastname = "Alva";
+    $role = "Programador";
+    $email = "csarx09@gmail.com";
+    $phone = 912659101;
+    $address = "jr Ayacucho 3891";
+    $city = "Lima";
+    $birthday = '1985.09.16';
+
+    $stetament->execute();
+    echo "fila agregada" . $conexion->affected_rows;
+}

@@ -1,16 +1,21 @@
 <?php
-$conexion = new mysqli("localhost","root","", "blog");
 
-echo $conexion -> connect_errno
-
-
-/* if ($conexion->connect_errno) {
-    die('Connect Error: ' . $conexion->connect_errno);
+if ($conexion->connect_errno) {
+    die('Connect Error: ');
+} else{
+    echo "conexion exitosa";
 }
 
-if (!$conexion) {
-    die('Connect Error: ' . mysqli_connect_errno());
+$sql = "SELECT * FROM services";
+
+$resultado = $conexion -> query($sql);
+
+echo $resultado -> num_rows;
+
+while ($fila = $resultado -> fetch_assoc()) {
+    echo $fila ['title'] . '_' . $fila['description'] .'<br/>';
+    # code...
+    echo '<a href='.$fila['url'].'> - </a>';
+    echo '<img src="'  . $fila['img'] ,'"alt="">';
 }
- */
 ?>
-

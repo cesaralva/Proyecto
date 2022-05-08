@@ -17,8 +17,10 @@
 
 <body>
     <?php
+    include 'conexion.php';
     include 'profile.php';
     include 'nav.php';
+
 
     ?>
 
