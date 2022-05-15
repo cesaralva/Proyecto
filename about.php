@@ -50,14 +50,14 @@ if ($conexion -> connect_errno) {
 */
 
 /* Metodo Preparared statements */
-
+/* 
 if ($conexion->connect_errno) {
 } else {
-    $stetament = $conexion->prepare("INSERT INTO profile(name, lastname, role, email, phone,  address, city, birthday) 
+    $statement = $conexion->prepare("INSERT INTO profile(name, lastname, role, email, phone,  address, city, birthday) 
     VALUES(?,?,?,?,?,?,?,?)");
 
-    $stetament->bind_param(
-        'ssssissd',
+    $statement->bind_param(
+        'ssssisss',
         $name,
         $lastname,
         $role,
@@ -75,8 +75,55 @@ if ($conexion->connect_errno) {
     $phone = 912659101;
     $address = "jr Ayacucho 3891";
     $city = "Lima";
-    $birthday = '1985.09.16';
+    $birthday = '1985-09-16';
 
-    $stetament->execute();
+    $statement->execute();
     echo "fila agregada" . $conexion->affected_rows;
+} */
+
+
+/* Connecting to the database and then it is selecting all the data from the profile table. */
+
+/* Connecting to the database and then it is selecting all the data from the profile table. */
+$name = 'cesar';
+/* 
+// Conexión de MYSQLi
+if ($conexion->connect_errno) {
+    die("Error de conexión");
+} else {
+
+    // Crear la declaración preparada
+    $statement = $conexion->prepare("SELECT * FROM profile WHERE name=?");
+    $statement->bind_param('s', $name);
+    $statement->execute();
+
+    // Asociar los resultados de la declaración preparada
+    $statement->bind_result($name, $lastname, $role, $email, $phone, $address, $city, $birthday);
+    $statement->fetch();
+
+    // Imprimir en pantalla cada valor asociado
+    printf($name);
+    echo "<br/>";
+    printf($lastname);
+    echo "<br/>";
+    printf($role);
+    echo "<br/>";
+    printf($email);
+    echo "<br/>";
+    printf($phone);
+    echo "<br/>";
+    printf($address);
+    echo "<br/>";
+    printf($city);
+    echo "<br/>";
+    printf($birthday);
 }
+ */
+
+
+
+
+
+
+
+?>

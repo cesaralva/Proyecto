@@ -1,5 +1,5 @@
 <section class="container contact" id="Contacts">
-    <h2>
+    <h2 class="display-4 text-center mb-md-4">
         <?php
         echo $nav[4]
         ?>
