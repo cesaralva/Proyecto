@@ -9,7 +9,7 @@ try {
     /* echo 'conexion ok '; */
 
     //metodo de tipo query
-    foreach ($conexion->query('SELECT * FROM section') as $fila) {
+    foreach ($conexion->query('SELECT * FROM profile') as $fila) {
         print_r($fila);
     }
 

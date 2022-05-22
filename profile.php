@@ -32,8 +32,25 @@ $socialred = array(
 );
 
 
+
+
+
+
+
+
+/* $socialred = array('./img/facebook.svg', './img/instagram.svg','./img/linkedin.svg'); */
+/* shuffle($socialred);
 ?>
 
+<?php
+shuffle($socialred);
 
+// Usa punto y coma en iniciar el bucle "for"
+for ($i = 0; $i < count($socialred); $i++) {
 
+    echo "<li style='display: flex'><img src='$socialred[$i]' width='50' height='50'></li>";
+}echo '<img src="img/facebook.svg" class="img-fluid text-center" alt="...">'
+
+ */
+?>
 

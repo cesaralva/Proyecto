@@ -12,20 +12,18 @@
 
 
 
-
 </head>
 
 <body>
     <?php
-    include 'conexion.php';    
-    include 'profile.php';    
+    include 'conexion.php';
+    include 'profile.php';
     include 'nav.php';
 
 
     ?>
 
-    <p>Hola</p>
-    <h2 class="texto"> Soy <strong>Cesar Alva</strong></h2>
+    <h2 class="texto text-center"> I am <span class="typing text-center">Cesar Alva</span></h2>
 
 
 
@@ -39,7 +37,9 @@
     include 'footer.php';
     ?>
 
-
+    <script src="./js/typing.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js" integrity="sha512-ggJ7yQCnXifbDXFFfyNhegaNXkkPMP+0cxMDobX6pABvU4zrqD+NMXxrGoAK9iANboRjpR4ajwWHCCfJXJFpJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="./lib/bootstrap/js/jquery.slim.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.bundle.js"></script>
 
